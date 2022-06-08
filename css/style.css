@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     text-transform: capitalize;
+    font-family: 'Kurale', serif;
 }
 body {
     background-color: #312244;
