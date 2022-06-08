@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+body {
+    background-color: #312244;
+}
+header {
+    box-shadow: 0 0 10px white;
+}
+.form {
+    width: 20%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+input {
+    width: 100%;
+    outline: none;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+    color: white;
+    font-size: 17px;
+}
+input::placeholder {
+    color: white;
+    font-size: 17px;
+}
+main {
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.movie-container {
+    width: 250px;
+    height: 400px;
+    background-color: aliceblue;
+    cursor: pointer;
+    box-shadow: 0 0 10px black;
+    position: relative;
+    margin: 10px;
+}
+.img {
+    width: 100%;
+    height: 320px;
+}
+.img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.info {
+    height: 80px;
+    background-color: #212f45;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.info h3 {
+    font-size: 17px;
+    color: white;
+    padding: 5px;
+}
+.info span {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #006466;
+    margin-right: 2%;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.info span.green {
+    color: lightgreen;
+}
+.info span.orange {
+    color: orange;
+}
+.info span.red {
+    color: rgb(168, 0, 0);
+}
+.description {
+    background-color: rgba(33, 47, 69, 0.9);
+    position: absolute;
+    bottom: 0;
+    height: 0;
+    overflow: hidden;
+    color: white;
+    transition: 1s;
+}
+.description h4 {
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+.description p {
+    padding: 7px;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+}
+.movie-container:hover .description {
+    height: 80%;
+}
+
+@media screen and (max-width : 710px) {
+    .form {
+        width: 80%;
+    }
+}
